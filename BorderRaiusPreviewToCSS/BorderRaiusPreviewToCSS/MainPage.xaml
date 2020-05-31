@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BorderRaiusPreviewToCSS.MainPage">
+
+    <StackLayout Margin="10">
+        <!-- Place new controls here -->
+        <Label Text="Border Radius Preview" HorizontalOptions="Center" VerticalOptions="Start" />
+        <Entry x:Name="lbSE"  Placeholder="Borda Superior Esquerda" Keyboard="Numeric" TextChanged="OnTextBSE"/>
+        <Entry x:Name="lbSD"  Placeholder="Borda Superior Direita" Keyboard="Numeric" TextChanged="OnTextBSE"/>
+        <Entry x:Name="lbIE"  Placeholder="Borda Inferior Esquerda" Keyboard="Numeric" TextChanged="OnTextBSE"/>
+        <Entry x:Name="lbID"  Placeholder="Borda Inferior Direita" Keyboard="Numeric" TextChanged="OnTextBSE"/>
+        <BoxView x:Name="box" Color="Green" WidthRequest="200" HeightRequest="200" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+        <Button Text="Copiar para CSS" Clicked="CopiarParaCSS" BackgroundColor="LightGreen"/>
+
+    </StackLayout>
+
+</ContentPage>
